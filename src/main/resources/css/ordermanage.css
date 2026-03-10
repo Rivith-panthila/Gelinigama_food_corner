@@ -1,0 +1,95 @@
+/* MODERN ORANGE ORDER MANAGEMENT THEME */
+
+.root {
+    -fx-background-color: #f8fafc;
+}
+
+/* 1. TABLE VIEW STYLING */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 5);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #f97316, #ea580c);
+    -fx-background-radius: 12 12 0 0;
+    -fx-pref-height: 35;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #fb923c;
+    -fx-text-fill: white;
+}
+
+/* 2. INPUT FIELDS (TextFields & ComboBox) */
+.text-field, .combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #f97316;
+}
+
+/* 3. BUTTON STYLES */
+.button {
+    -fx-background-color: #64748b; /* සාමාන්‍ය බොත්තම් අළු පාට */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #475569;
+}
+
+/* විශේෂ බොත්තම් (Orange) */
+/* Search, Update, Clear බොත්තම් වලට fxml එකේ styleClass="btn-orange" ලබා දෙන්න */
+.btn-orange {
+    -fx-background-color: #f97316;
+}
+.btn-orange:hover {
+    -fx-background-color: #ea580c;
+}
+
+/* PAY BUTTON (විශාල සහ කැපී පෙනෙන) */
+.btn-pay {
+    -fx-background-color: linear-gradient(to bottom, #10b981, #059669); /* Pay බොත්තම කොළ පාටින් තිබීම POS වල සාමාන්‍ය දෙයක් */
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: 900;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.4), 10, 0, 0, 5);
+}
+.btn-pay:hover {
+    -fx-scale-x: 1.05;
+    -fx-background-color: #059669;
+}
+
+/* 4. LABELS */
+.label {
+    -fx-text-fill: #334155;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+}
+
+/* Cart Total Display */
+#lblCartTotal {
+    -fx-text-fill: #ea580c;
+    -fx-font-weight: 900;
+}

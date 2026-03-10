@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="711.0" prefWidth="1000" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gelanigama_food_corner.controller.LoginController">
+
+    <children>
+
+        <!-- LEFT PANEL WITH GLASS CARD -->
+        <AnchorPane prefWidth="400" style="-fx-background-color:transparent;">
+            <children>
+
+                <!-- Glass Card Background -->
+                <Rectangle arcHeight="35" arcWidth="35" fill="rgba(255,255,255,0.20)" height="500" layoutX="50" layoutY="100" width="300">
+                    <effect>
+                        <DropShadow color="#00000070" radius="18" spread="0.2" />
+                    </effect>
+                </Rectangle>
+
+                <!-- Logo -->
+                <VBox alignment="CENTER" layoutX="50" layoutY="120" prefWidth="300" spacing="15">
+                    <children>
+                        <ImageView fitHeight="150" fitWidth="200" preserveRatio="true">
+                            <image>
+                                <Image url="@images/gfc3.png" />
+                            </image>
+                        </ImageView>
+
+                        <Label style="-fx-text-fill: #ff8800;" styleClass="header-label" text="Gelanigama Food Corner">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+
+                <!-- Username -->
+                <VBox alignment="CENTER_LEFT" layoutX="70" layoutY="330" spacing="5">
+                    <children>
+                        <Label style="-fx-text-fill: grey;" text="Username :" textFill="#232121">
+                            <font>
+                                <Font size="18" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameField" prefWidth="260" promptText="Enter The Username">
+                        </TextField>
+                    </children>
+                </VBox>
+
+                <!-- Password -->
+                <VBox alignment="CENTER_LEFT" layoutX="70" layoutY="420" spacing="5">
+                    <children>
+                        <Label style="-fx-text-fill: grey;" text="Password :">
+                            <font>
+                                <Font size="18" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" prefWidth="260" promptText="Enter the password">
+                        </PasswordField>
+                    </children>
+                </VBox>
+
+                <!-- Login Button -->
+                <Button defaultButton="true" layoutX="140" layoutY="520" onAction="#login" prefHeight="50" prefWidth="160" text="Login">
+                    <effect>
+                        <DropShadow color="#00000070" radius="12" />
+                    </effect>
+                </Button>
+
+            </children>
+        </AnchorPane>
+
+        <!-- RIGHT SIDE BACKGROUND IMAGE -->
+        <AnchorPane prefWidth="600">
+            <children>
+                <ImageView fitHeight="750" fitWidth="600" preserveRatio="true">
+                    <image>
+                        <Image url="@images/pexels-jaycelab-29655572.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+
+    </children>
+</HBox>

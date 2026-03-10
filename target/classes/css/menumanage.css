@@ -1,0 +1,348 @@
+/* ============================================
+   GELANIGAMA FOOD CORNER - MENU MANAGEMENT STYLES
+   menumanagement.css - GLASS EFFECT THEME
+   ============================================ */
+
+/* Root Container */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* ============================================
+   MAIN ANCHOR PANE
+   ============================================ */
+
+AnchorPane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0;
+}
+
+/* ============================================
+   FLOW PANE - MENU ITEMS GRID
+   ============================================ */
+
+.flow-pane {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 15;
+    -fx-hgap: 15;
+    -fx-vgap: 15;
+}
+
+/* ============================================
+   MENU ITEM CARD STYLING
+   ============================================ */
+
+.menu-card {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-width: 1.5;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 2);
+}
+
+.menu-card:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-border-color: #ff8800;
+    -fx-effect: dropshadow(gaussian, rgba(255, 136, 0, 0.4), 12, 0, 0, 3);
+}
+
+/* ============================================
+   MENU ITEM BUTTONS
+   ============================================ */
+
+.menu-item-button {
+    -fx-background-color: #ff8800;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-border-radius: 20;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.menu-item-button:hover {
+    -fx-background-color: #ff9900;
+    -fx-effect: dropshadow(gaussian, rgba(255, 136, 0, 0.6), 10, 0, 0, 2);
+}
+
+.menu-item-button:pressed {
+    -fx-background-color: #ff7700;
+    -fx-padding: 11 15 9 15;
+}
+
+/* ============================================
+   SCROLL PANE STYLING
+   ============================================ */
+
+.scroll-pane {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 0;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #f5f5f5;
+}
+
+.scroll-pane:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+
+.scroll-bar {
+    -fx-padding: 5;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #ff8800;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #ff8800;
+}
+
+/* ============================================
+   TABLE VIEW - SHOPPING CART
+   ============================================ */
+
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-width: 1.5;
+    -fx-padding: 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: #ff8800;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    -fx-border-color: #ff7700;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ff8800;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-font-size: 12;
+    -fx-padding: 5;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #fff3e0;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: rgba(255, 136, 0, 0.2);
+    -fx-text-fill: #333333;
+}
+
+.table-view .table-row-cell:focused {
+    -fx-background-color: rgba(255, 136, 0, 0.2);
+}
+
+.table-view:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   TABLE COLUMN STYLING
+   ============================================ */
+
+.table-column {
+    -fx-text-alignment: center;
+}
+
+/* ============================================
+   LABELS - CART SECTION
+   ============================================ */
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14;
+}
+
+.total-label {
+    -fx-text-fill: #ff8800;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+}
+
+.total-value {
+    -fx-text-fill: #333333;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255, 136, 0, 0.1);
+    -fx-background-radius: 10;
+    -fx-padding: 5 10 5 10;
+}
+
+/* ============================================
+   PROCEED TO ORDER BUTTON
+   ============================================ */
+
+#btnProceedToOrder {
+    -fx-background-color: #ff8800;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 12 20 12 20;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-border-radius: 25;
+}
+
+#btnProceedToOrder:hover {
+    -fx-background-color: #ff9900;
+    -fx-effect: dropshadow(gaussian, rgba(255, 136, 0, 0.6), 15, 0, 0, 5);
+}
+
+#btnProceedToOrder:pressed {
+    -fx-background-color: #ff7700;
+    -fx-padding: 13 20 11 20;
+}
+
+#btnProceedToOrder:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   TOTAL LABEL STYLING
+   ============================================ */
+
+#lblTotal {
+    -fx-text-fill: #ff8800;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255, 136, 0, 0.1);
+    -fx-background-radius: 10;
+    -fx-padding: 5 10 5 10;
+}
+
+/* ============================================
+   RIGHT PANEL - CART CONTAINER
+   ============================================ */
+
+AnchorPane {
+    -fx-background-color: #ffffff;
+}
+
+/* ============================================
+   CART SECTION STYLING
+   ============================================ */
+
+.cart-container {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 15;
+}
+
+.cart-section {
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-width: 1.5;
+    -fx-padding: 15;
+}
+
+/* ============================================
+   TEXT FIELD STYLING - QUANTITY INPUT
+   ============================================ */
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-text-fill: #333333;
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-padding: 8 10 8 10;
+    -fx-font-size: 12;
+}
+
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-border-color: #ff8800;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(255, 136, 0, 0.4), 8, 0, 0, 0);
+}
+
+/* ============================================
+   REMOVE/DELETE BUTTON
+   ============================================ */
+
+.remove-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+    -fx-padding: 6 10 6 10;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+    -fx-border-radius: 15;
+}
+
+.remove-button:hover {
+    -fx-background-color: #e53935;
+    -fx-effect: dropshadow(gaussian, rgba(244, 67, 54, 0.5), 8, 0, 0, 1);
+}
+
+.remove-button:pressed {
+    -fx-background-color: #c62828;
+}
+
+/* ============================================
+   FOCUS STATES - REMOVE DEFAULTS
+   ============================================ */
+
+.button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   TRANSITIONS & ANIMATIONS
+   ============================================ */
+
+.menu-item-button {
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+#btnProceedToOrder {
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+.menu-card {
+    -fx-transition: background-color 0.3s ease-in-out;
+}

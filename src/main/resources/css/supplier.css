@@ -1,0 +1,92 @@
+/* MODERN ORANGE SUPPLIER MANAGEMENT THEME */
+
+.root {
+    -fx-background-color: #f8fafc;
+}
+
+/* 1. TABLE VIEW STYLING */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e2e8f0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #f97316, #ea580c);
+    -fx-background-radius: 12 12 0 0;
+    -fx-pref-height: 40;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #334155;
+    -fx-font-size: 12px;
+    -fx-padding: 8;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #fff7ed;
+}
+
+/* 2. TEXT FIELDS & DATE PICKER */
+.text-field, .date-picker, .combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-padding: 5;
+}
+
+.text-field:focused, .date-picker:focused, .combo-box:focused {
+    -fx-border-color: #f97316;
+}
+
+/* 3. BUTTONS */
+.button {
+    -fx-background-color: #f97316;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ea580c;
+    -fx-scale-x: 1.03;
+}
+
+/* Delete Button */
+.button-delete {
+    -fx-background-color: #ef4444;
+}
+
+/* 4. IMAGE CONTAINER */
+.image-box {
+    -fx-background-color: white;
+    -fx-border-color: #f97316;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+/* 5. LABELS */
+.label {
+    -fx-text-fill: #475569;
+    -fx-font-weight: bold;
+}
+
+.title-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ea580c;
+    -fx-font-weight: 800;
+}
