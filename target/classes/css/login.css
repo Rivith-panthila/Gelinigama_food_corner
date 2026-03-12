@@ -1,0 +1,57 @@
+/* MODERN GLASSMORPHISM LOGIN THEME */
+
+/* 1. BACKGROUND SETTINGS */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #1e293b, #334155);
+}
+
+/* 2. TEXT FIELDS & PASSWORD FIELD */
+.text-field, .password-field {
+    -fx-background-color: rgba(255, 255, 255, 0.85); /* සුදු පැහැති විනිවිද පෙනෙන පසුබිම */
+    -fx-background-radius: 15;
+    -fx-border-color: transparent;
+    -fx-border-radius: 15;
+    -fx-padding: 12;
+    -fx-font-size: 15px;
+    -fx-text-fill: #1e293b;
+    -fx-transition: 0.3s;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #f97316;
+    -fx-effect: dropshadow(three-pass-box, rgba(249, 115, 22, 0.3), 10, 0, 0, 0);
+}
+
+/* 3. LOGIN BUTTON */
+.button {
+    -fx-background-color: linear-gradient(to right, #f97316, #ea580c);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-transition: 0.4s;
+}
+
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, rgba(234, 88, 12, 0.5), 15, 0, 0, 5);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.98;
+}
+
+/* 4. LABELS */
+.label {
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Company Name Label */
+.header-label {
+    -fx-text-fill: #f97316;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 0);
+}

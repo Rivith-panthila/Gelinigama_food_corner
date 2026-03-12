@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/Gelinigama_food_corner-main/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Gelinigama_food_corner-main/src/main/resources" charset="UTF-8" />
+=======
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+>>>>>>> 522fb3dc23f33462016bef5c8fa68a9d3d48b071
   </component>
 </project>
