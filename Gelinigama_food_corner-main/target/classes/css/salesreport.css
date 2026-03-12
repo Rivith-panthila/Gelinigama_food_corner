@@ -1,0 +1,57 @@
+/* MODERN ORANGE POS THEME */
+
+.root {
+    -fx-background-color: #fdfcfb; /* පසුබිම ඉතා ලා පැහැති අළු/සුදු */
+}
+
+/* 1. ORANGE STAT CARDS (AnchorPanes වලට styleClass="stat-card" ලබා දෙන්න) */
+.stat-card {
+    /* තැඹිලි පාට gradient එකක් */
+    -fx-background-color: linear-gradient(to bottom right, #f97316, #ea580c);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(234, 88, 12, 0.3), 15, 0, 0, 8);
+}
+
+/* 2. TEXT VISIBILITY FIXED (අකුරු සුදු පාටට) */
+.stat-card .label {
+    -fx-text-fill: white !important; /* හැම අකුරක්ම සුදු පාට කරනවා */
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Main Titles (TODAY INCOME වගේ අකුරු) */
+.label-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-opacity: 0.9; /* පොඩි brightness එකක් */
+}
+
+/* Amounts (RS 0.0 හෝ ඉලක්කම්) */
+.label-value {
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #ffffff;
+}
+
+/* 3. CHART STYLING */
+.chart {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 10, 0, 0, 5);
+}
+
+.chart-title {
+    -fx-text-fill: #431407; /* Chart එකේ නම තද දුඹුරු/කළු පාට */
+    -fx-font-weight: bold;
+}
+
+/* Line Chart & Bar Chart එකත් Orange කරන්න */
+.default-color0.chart-series-line { -fx-stroke: #f97316; }
+.default-color0.chart-bar { -fx-bar-fill: #f97316; }
+
+/* 4. SCROLLBAR */
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #fb923c;
+    -fx-background-radius: 10;
+}

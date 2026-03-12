@@ -1,0 +1,323 @@
+/* ============================================
+   GELANIGAMA FOOD CORNER - ITEM MANAGEMENT STYLES
+   itemmanagement.css - GLASS EFFECT THEME
+   ============================================ */
+
+/* Root Container */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* ============================================
+   MAIN ANCHOR PANE
+   ============================================ */
+
+AnchorPane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0;
+}
+
+/* ============================================
+   TABLE VIEW - ITEM LIST
+   ============================================ */
+
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-width: 1.5;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 2);
+}
+
+.table-view .column-header {
+    -fx-background-color: #ff8800;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    -fx-border-color: #ff7700;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ff8800;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-font-size: 11;
+    -fx-padding: 5;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #fff3e0;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: rgba(255, 136, 0, 0.2);
+    -fx-text-fill: #333333;
+}
+
+.table-view .table-row-cell:focused {
+    -fx-background-color: rgba(255, 136, 0, 0.2);
+}
+
+.table-view:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   TABLE COLUMN STYLING
+   ============================================ */
+
+.table-column {
+    -fx-text-alignment: center;
+}
+
+/* ============================================
+   SEPARATOR
+   ============================================ */
+
+.separator {
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-padding: 3 0 3 0;
+}
+
+/* ============================================
+   FORM LABELS
+   ============================================ */
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 12;
+    -fx-font-weight: 500;
+}
+
+.form-title {
+    -fx-text-fill: #ff8800;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+/* ============================================
+   TEXT INPUT FIELDS
+   ============================================ */
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-text-fill: #333333;
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-padding: 8 10 8 10;
+    -fx-font-size: 12;
+}
+
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-border-color: #ff8800;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(255, 136, 0, 0.4), 8, 0, 0, 0);
+}
+
+.text-field:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   IMAGE DISPLAY AREA
+   ============================================ */
+
+AnchorPane[style*="-fx-background-color: white"] {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: rgba(255, 136, 0, 0.3);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-width: 1.5;
+    -fx-padding: 5;
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+/* ============================================
+   ACTION BUTTONS
+   ============================================ */
+
+.button {
+    -fx-background-color: #ff8800;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 8 15 8 15;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-border-radius: 20;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: #ff9900;
+    -fx-effect: dropshadow(gaussian, rgba(255, 136, 0, 0.6), 10, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: #ff7700;
+    -fx-padding: 9 15 7 15;
+}
+
+.button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   SPECIFIC BUTTON STYLES
+   ============================================ */
+
+/* Save Button */
+#saveBtn {
+    -fx-background-color: #4CAF50;
+}
+
+#saveBtn:hover {
+    -fx-background-color: #45a049;
+    -fx-effect: dropshadow(gaussian, rgba(76, 175, 80, 0.6), 10, 0, 0, 2);
+}
+
+#saveBtn:pressed {
+    -fx-background-color: #3d8b40;
+}
+
+/* Update Button */
+#updateBtn {
+    -fx-background-color: #2196F3;
+}
+
+#updateBtn:hover {
+    -fx-background-color: #0b7dda;
+    -fx-effect: dropshadow(gaussian, rgba(33, 150, 243, 0.6), 10, 0, 0, 2);
+}
+
+#updateBtn:pressed {
+    -fx-background-color: #0056b3;
+}
+
+/* Delete Button */
+#deleteBtn {
+    -fx-background-color: #f44336;
+}
+
+#deleteBtn:hover {
+    -fx-background-color: #da190b;
+    -fx-effect: dropshadow(gaussian, rgba(244, 67, 54, 0.6), 10, 0, 0, 2);
+}
+
+#deleteBtn:pressed {
+    -fx-background-color: #ba0000;
+}
+
+/* Reset/Clean Fields Button */
+#resetBtn {
+    -fx-background-color: #FF9800;
+}
+
+#resetBtn:hover {
+    -fx-background-color: #e68900;
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.6), 10, 0, 0, 2);
+}
+
+#resetBtn:pressed {
+    -fx-background-color: #f57c00;
+}
+
+/* Import Image Button */
+#importBtn {
+    -fx-background-color: #9C27B0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 15 8 15;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-cursor: hand;
+}
+
+#importBtn:hover {
+    -fx-background-color: #7b1fa2;
+    -fx-effect: dropshadow(gaussian, rgba(156, 39, 176, 0.6), 10, 0, 0, 2);
+}
+
+#importBtn:pressed {
+    -fx-background-color: #6a1b9a;
+    -fx-padding: 9 15 7 15;
+}
+
+#importBtn:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+
+.scroll-bar {
+    -fx-padding: 5;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #ff8800;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #ff8800;
+}
+
+/* ============================================
+   CONTEXT MENU & TOOLTIPS
+   ============================================ */
+
+.tooltip {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-padding: 8 12 8 12;
+    -fx-background-radius: 5;
+}
+
+/* ============================================
+   TRANSITIONS & ANIMATIONS
+   ============================================ */
+
+.text-field {
+    -fx-transition: border-color 0.3s ease-in-out;
+}
+
+.button {
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+.table-view .table-row-cell {
+    -fx-transition: background-color 0.2s ease-in-out;
+}
